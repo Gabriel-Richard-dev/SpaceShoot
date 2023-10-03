@@ -1,0 +1,15 @@
+/home/gabrielrichard/atividades/SpaceShoot/bin/Debug/net6.0/SpaceShoot
+/home/gabrielrichard/atividades/SpaceShoot/bin/Debug/net6.0/SpaceShoot.deps.json
+/home/gabrielrichard/atividades/SpaceShoot/bin/Debug/net6.0/SpaceShoot.runtimeconfig.json
+/home/gabrielrichard/atividades/SpaceShoot/bin/Debug/net6.0/SpaceShoot.dll
+/home/gabrielrichard/atividades/SpaceShoot/bin/Debug/net6.0/SpaceShoot.pdb
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/SpaceShoot.csproj.AssemblyReference.cache
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/SpaceShoot.GeneratedMSBuildEditorConfig.editorconfig
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/SpaceShoot.AssemblyInfoInputs.cache
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/SpaceShoot.AssemblyInfo.cs
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/SpaceShoot.csproj.CoreCompileInputs.cache
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/SpaceShoot.dll
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/SpaceShoot.pdb
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/SpaceShoot.genruntimeconfig.cache
+/home/gabrielrichard/atividades/SpaceShoot/obj/Debug/net6.0/ref/SpaceShoot.dll
+/home/gabrielrichard/atividades/SpaceShoot/bin/Debug/net6.0/ref/SpaceShoot.dll
