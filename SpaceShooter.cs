@@ -7,12 +7,18 @@ public class SpaceShooter
         position = new int[2];
         position[(int)Posicao.Horizontal] = 29;
         position[(int)Posicao.Vertical] = 18;
+        NaveDraw = "\u25b2";
+        Vida = 2;
+        Points = 0;
     }
     
     public int[] position { get; set; }
-    public readonly string NaveDraw = "\u25b2";
+    public string NaveDraw { get; set; }
     private ConsoleKey key;
     public List<Shoot> shoots = new List<Shoot>();
+    public int Vida { get; set; }
+    public int Points { get; set; }
+
     public ConsoleKey Move(Tabuleiro tab, ConsoleKey? key)
     {
         if (Console.KeyAvailable)
@@ -68,6 +74,27 @@ public class SpaceShooter
                 return ConsoleKey.F1;
             }
             
+    }
+
+    public bool Morreu()
+    {
+        if (Vida == 0)
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+    public bool Ganhou()
+    {
+        if (Points == 300)
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
     }
     
 }

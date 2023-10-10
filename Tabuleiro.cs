@@ -47,6 +47,7 @@ public class Tabuleiro
         Console.SetCursorPosition(spcship.position[(int)Posicao.Horizontal], spcship.position[(int)Posicao.Vertical]);
         Console.Write(spcship.NaveDraw);
         Console.SetCursorPosition(0, 24);
+        Console.Write($"{spcship.Vida} | {spcship.Points}");
 
     }
 
@@ -91,7 +92,7 @@ public class Tabuleiro
                 } break;
                 case -1:
                 {
-                    if ((st.position[(int)Posicao.Vertical] + 1) == 21)
+                    if ((st.position[(int)Posicao.Vertical] + 1) == 22)
                     {
                         continue;
                     }
@@ -108,7 +109,7 @@ public class Tabuleiro
                 
                 for (int s = 0; s < (sht.Count()); s++)
                 {
-                    if (sht[s].position[(int)Posicao.Vertical] == 20)
+                    if (sht[s].position[(int)Posicao.Vertical] == 21)
                     {
                         sht.Remove(sht[s]);
                     }

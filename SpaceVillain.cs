@@ -27,8 +27,9 @@ public class SpaceVillain
         {
             List<ConsoleKey> keys = new List<ConsoleKey>()
             {
-                ConsoleKey.UpArrow, ConsoleKey.DownArrow,
-                ConsoleKey.LeftArrow, ConsoleKey.RightArrow, ConsoleKey.Spacebar
+                ConsoleKey.A, ConsoleKey.A, 
+                ConsoleKey.A, ConsoleKey.A, 
+                ConsoleKey.Spacebar
             };
             var prob = new Random();
             int space = 0;

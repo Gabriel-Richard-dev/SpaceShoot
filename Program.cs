@@ -19,7 +19,7 @@ class Program
         tab.InsereTabuleiro(spaceship, null);
         tab.InsereNave(spaceship);
 
-        while (true)
+        while (!(spaceship.Morreu()) || (spaceship.Ganhou()))
         {
             key = spaceship.Move(tab, key);
             actionmodel = action.Colisoes(spaceVillains, spaceship);
@@ -27,6 +27,8 @@ class Program
             spaceship = (SpaceShooter)actionmodel.actions[(int)Entity.Spaceship];
             spaceVillains = (List<SpaceVillain>)actionmodel.actions[(int)Entity.Spacevillain];
         }
+        
+        Final(spaceship);
         
     }
     
@@ -40,6 +42,18 @@ class Program
             vl.Move(tb);
         }
        
+    }
+
+    public static void Final(SpaceShooter spc)
+    {
+        if (spc.Morreu())
+        {
+            Console.Write("Você morreu!");
+            Console.ReadLine();
+        }else if (spc.Ganhou())
+        {
+            Console.Write("Você ganhou!");
+        }
     }
 }
 
