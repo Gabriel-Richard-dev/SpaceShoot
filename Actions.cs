@@ -79,14 +79,56 @@ public class Actions
         {
             spc.shoots.Remove(rmsht);
         }
+
+        var hash = ColideTiro(villains, spc);
+        spc = (SpaceShooter)hash.actions[0];
+        villains = (List<SpaceVillain>)hash.actions[1];
+        
         return new ActionModel(spc, villains);
 
     }
 
-    public void ColideTiro(List<SpaceVillain> villains, List<Shoot> spcShoot)
+    public ActionModel ColideTiro(List<SpaceVillain> villains, SpaceShooter spc)
     {
+        var shootsRemoved = new List<Shoot>();
+        var vlshootsRemoved = new List<List<object>>();
+        
+        
+        foreach (var villian in villains)
+        {
+            foreach (var vlshoot in villian.vlshoots)
+            {
+                foreach (var shoot in spc.shoots)
+                {
+                    if (vlshoot.position[(int)Posicao.Horizontal] == shoot.position[(int)Posicao.Horizontal]
+                        && vlshoot.position[(int)Posicao.Vertical] == shoot.position[(int)Posicao.Vertical])
+                    {
+                        shootsRemoved.Add(shoot);
+                        vlshootsRemoved.Add(new List<object>() {villian, shoot});
+                    }
+                }
+            }
+            
+        }
+
+        foreach (var rmshoot in shootsRemoved)
+        {
+            spc.shoots.Remove(rmshoot);
+        }
+
+        foreach (List<object> rmvlsht in vlshootsRemoved)
+        {
+            foreach (var vilian in villains)
+            {
+                if (vilian.Equals(rmvlsht[0]))
+                {
+                    vilian.vlshoots.Remove((Shoot)rmvlsht[1]);
+                }
+            }
+        }
+
+        return new ActionModel(spc, villains);
         
     }
-    
-    
+
 }

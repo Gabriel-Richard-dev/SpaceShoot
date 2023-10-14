@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/home/gabrielrichard/atividades/SpaceShoot/SpaceShoot.csproj": {}
+    "C:\\Users\\Master\\PROGRAMAÇÃO\\SpaceShoot\\SpaceShoot.csproj": {}
   },
   "projects": {
-    "/home/gabrielrichard/atividades/SpaceShoot/SpaceShoot.csproj": {
+    "C:\\Users\\Master\\PROGRAMAÇÃO\\SpaceShoot\\SpaceShoot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabrielrichard/atividades/SpaceShoot/SpaceShoot.csproj",
+        "projectUniqueName": "C:\\Users\\Master\\PROGRAMAÇÃO\\SpaceShoot\\SpaceShoot.csproj",
         "projectName": "SpaceShoot",
-        "projectPath": "/home/gabrielrichard/atividades/SpaceShoot/SpaceShoot.csproj",
-        "packagesPath": "/home/gabrielrichard/.nuget/packages/",
-        "outputPath": "/home/gabrielrichard/atividades/SpaceShoot/obj/",
+        "projectPath": "C:\\Users\\Master\\PROGRAMAÇÃO\\SpaceShoot\\SpaceShoot.csproj",
+        "packagesPath": "C:\\Users\\Master\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Master\\PROGRAMAÇÃO\\SpaceShoot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/gabrielrichard/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Master\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,7 +45,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -52,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.122/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
